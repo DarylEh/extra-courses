@@ -57,12 +57,18 @@
     // }
 
     //-------Solution Six (Reduce array method) ----------
-    function reverseString(str) {
-        return str.split('').reduce((revString, char) => char + revString, '');
-    }
+    // function reverseString(str) {
+    //     return str.split('').reduce((revString, char) => char + revString, '');
+    // }
+
+// Validate a Palindrome
+function isPalindrome(str){
+    const revSring = str.split('').reverse().join('');
+    return str === revSring
+}
 
 
 
 //Call Function
-const output = reverseString('hello');
+const output = isPalindrome('racecar');
 console.log(output);
